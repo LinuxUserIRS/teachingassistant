@@ -1,0 +1,20 @@
+nav a {
+  padding: 4px 10px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #3399ff;
+  color: #ffffff;
+  border-radius: 5px;
+}
+nav a:hover {
+  color: #e6e6e6;
+  background-color: #1a8cff;
+}
+button { 
+font-family: Arial; 
+background-color: #5ca583; 
+border: none; 
+padding: 5px 10px; 
+border-radius: 4px; 
+cursor: pointer; 
+cursor: hand; }
