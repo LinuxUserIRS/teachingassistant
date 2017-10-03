@@ -1,13 +1,13 @@
-<html (mousemove)="onMove()">
+﻿<html (mousemove)="onMove()">
 
 <table>
 <tr>
    <td><label>Nome </label></td>
-   <td><input [(ngModel)]="aluno.nome" ></td>
+   <td><input [(ngModel)]="aluno.nome" name="namebox"></td>
 </tr>
 <tr>
    <td><label>CPF </label></td>
-   <td><input [(ngModel)]="aluno.cpf" ></td>
+   <td><input [(ngModel)]="aluno.cpf" name="cpfbox"></td>
    <td *ngIf="cpfduplicado">
      Já existe um aluno com esse CPF
    </td>
@@ -32,8 +32,8 @@
    <th>Login</th>
 </tr>
 <tr *ngFor="let a of alunos">
-   <td>{{a.nome}}</td>
-   <td>{{a.cpf}}</td>
+   <td name="namelist">{{a.nome}}</td>
+   <td name="cpflist">{{a.cpf}}</td>
    <td>{{a.email}}</td>
    <td>{{a.login}}</td>
 </tr>
